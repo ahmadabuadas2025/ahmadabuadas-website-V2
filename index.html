@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Abuadas · Big Data & AI Engineer</title>
+    <meta name="description" content="Ahmad Abuadas: big data and AI engineer at Citi. Pipelines, AML analytics and LLM agents, shown as live architecture maps." />
+    <meta property="og:title" content="Ahmad Abuadas · Big Data & AI Engineer" />
+    <meta property="og:description" content="Pipelines, AML analytics and LLM agents, shown as live architecture maps." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0B1020" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      (function () {
+        var t = null;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Netlify Forms needs a static copy of the form at build time -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

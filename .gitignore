@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.playwright-mcp/
+*.doc
+*.docx
+.env
+.netlify/
+*.tsbuildinfo
